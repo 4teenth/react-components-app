@@ -1,0 +1,35 @@
+[
+  {
+    "id": "id-1",
+    "url": "https://i.redd.it/3iznml46k2b61.jpg",
+    "title": "Meme GaG",
+    "price": 500,
+    "author": {
+      "tag": "not_called_bob",
+      "url": "https://www.redditery.com/user/not_called_bob/submitted"
+    },
+    "quantity": 10
+  },
+  {
+    "id": "id-2",
+    "url": "https://i.redd.it/7arvo9lm1r361.jpg",
+    "title": "Penguin Meme",
+    "price": 400,
+    "author": {
+      "tag": "not_called_bob",
+      "url": "https://www.redditery.com/user/not_called_bob/submitted"
+    },
+    "quantity": 5
+  },
+  {
+    "id": "id-3",
+    "url": "https://i.redd.it/sxdvfwuwqnq21.jpg",
+    "title": "BBC",
+    "price": 600,
+    "author": {
+      "tag": "not_called_bob",
+      "url": "https://www.redditery.com/user/not_called_bob/submitted"
+    },
+    "quantity": 15
+  }
+]
