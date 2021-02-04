@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import defaultImg from "./defaultImg.jpg";
 
 const Painting = ({ url, title, profileHomePage, tag, price, quantity }) => (
   // console.log(props);
   <div>
-    <img src={defaultImg} alt={title} width="240" />
+    <img src={url} alt={title} width="240" />
     <h2>{title}</h2>
     <p>
       Author: <a href={profileHomePage}>{tag}</a>
@@ -16,7 +17,16 @@ const Painting = ({ url, title, profileHomePage, tag, price, quantity }) => (
 );
 
 Painting.defaultProps = {
-  url: "https://i.redd.it/1lkv7o7codi21.jpg",
+  url: defaultImg,
+};
+
+Painting.propTypes = {
+  url: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  profileHomePage: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  quantity: PropTypes.number.isRequired,
 };
 
 export default Painting;
