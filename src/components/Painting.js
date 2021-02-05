@@ -2,9 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import defaultImg from "./defaultImg.jpg";
 
-const Painting = ({ url, title, profileHomePage, tag, price, quantity }) => (
+const Painting = ({
+  id,
+  url,
+  title,
+  profileHomePage,
+  tag,
+  price,
+  quantity,
+}) => (
   // console.log(props);
-  <div>
+  <div key={id}>
     <img src={url} alt={title} width="240" />
     <h2>{title}</h2>
     <p>
