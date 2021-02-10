@@ -1,6 +1,8 @@
 import React from "react";
+import Logo from "./components/Logo";
 // import Painting from "./components/Painting";
 import PaintingList from "./components/PaintingList";
+import Panel from "./components/Panel";
 import paintingsData from "./paintings.json";
 
 console.log(paintingsData);
@@ -11,7 +13,14 @@ console.log(paintingsData);
 const App = () => {
   return (
     <div>
-      <h1>Главный компонет-контейнер приложения!</h1>
+      <Panel title="Title it's a prop `title` in Panel">
+        <p>It's children element in props</p>
+        <a href="www.google.com">link?</a>
+      </Panel>
+      <Panel>
+        <p>Repeat panel child</p>
+      </Panel>
+      <Logo text="Главный компонет-контейнер приложения!" />
       {/* <ul>
         {numbers.map((number) => (
           <li>{number}</li>
