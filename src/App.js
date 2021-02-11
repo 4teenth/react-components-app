@@ -14,8 +14,8 @@ const App = () => {
   return (
     <div>
       <Panel title="Title it's a prop `title` in Panel">
-        <p>It's children element in props</p>
-        <a href="www.google.com">link?</a>
+        <p>It's a child(prop-element)</p>
+        <a href="www.google.com">One more child, so we have children-prop</a>
       </Panel>
       <Panel>
         <p>Repeat panel child</p>

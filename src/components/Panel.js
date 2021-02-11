@@ -8,6 +8,7 @@ const styles = {
 
 const Panel = ({ title, children }) => (
   <div style={styles}>
+    {/* paste prop(title) in a current component in App - render <h2>{title}</h2>... && or use(? :)*/}
     {title && <h2>{title}</h2>}
 
     {children}
