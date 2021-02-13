@@ -25,7 +25,7 @@ const App = () => {
         <a href="www.google.com">One more child, so we have children-prop</a>
       </Panel>
       <Panel>
-        <p>Repeat panel child</p>
+        <p>Repeat panel child, now, with Profile-elem inside</p>
         <Profile name="SuperUser" email="blabla@code.com" />
       </Panel>
       <Logo text="Главный компонет-контейнер приложения!" />
