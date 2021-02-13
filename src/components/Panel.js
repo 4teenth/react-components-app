@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const styles = {
-  background: "orange",
+  width: "400px",
+  background: "pink",
   outline: "1px solid cyan",
 };
 

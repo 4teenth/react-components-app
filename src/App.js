@@ -10,6 +10,13 @@ console.log(paintingsData);
 // const numbers = [1, 2, 3, 4, 5];
 // const colors = ["red", "green", "blue", "pink"];
 
+const Profile = ({ name, email }) => (
+  <div>
+    <p>Name: {name}</p>
+    <p>Email: {email}</p>
+  </div>
+);
+
 const App = () => {
   return (
     <div>
@@ -19,6 +26,7 @@ const App = () => {
       </Panel>
       <Panel>
         <p>Repeat panel child</p>
+        <Profile name="SuperUser" email="blabla@code.com" />
       </Panel>
       <Logo text="Главный компонет-контейнер приложения!" />
       {/* <ul>
