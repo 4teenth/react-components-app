@@ -27,7 +27,7 @@ const PaintingList = ({ paintings }) => (
         //*   ({ id, url, title, price, author, quantity }) - look above how use destructuring for @author@
         <li key={id}>
           <Painting
-            //* key={id} - see a flag in react components
+            //* key={id} - see a flag in react components dev tools
             url={url}
             title={title}
             price={price}
