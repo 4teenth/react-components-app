@@ -22,12 +22,12 @@ import Painting from "./Painting";
 // Improvements with id-key props-----------------------
 const PaintingList = ({ paintings }) => (
   <ul>
-    <li>
-      {paintings.map(
-        ({ id, url, title, price, author: { urlAuth, tag }, quantity }) => (
-          //*   ({ id, url, title, price, author, quantity }) - look above how use destructuring for @author@
+    {paintings.map(
+      ({ id, url, title, price, author: { urlAuth, tag }, quantity }) => (
+        //*   ({ id, url, title, price, author, quantity }) - look above how use destructuring for @author@
+        <li key={id}>
           <Painting
-            key={id}
+            //* key={id} - see a flag in react components
             url={url}
             title={title}
             price={price}
@@ -37,9 +37,9 @@ const PaintingList = ({ paintings }) => (
             // tag={author.tag}
             quantity={quantity}
           />
-        )
-      )}
-    </li>
+        </li>
+      )
+    )}
   </ul>
 );
 

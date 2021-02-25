@@ -4,6 +4,8 @@ import Logo from "./components/Logo";
 import PaintingList from "./components/PaintingList";
 import Panel from "./components/Panel";
 import paintingsData from "./paintings.json";
+import testDefPropDb from "./testDefPropDb.json";
+import TestDefaultProp from "./components/TestDefaultProp";
 
 console.log(paintingsData);
 
@@ -57,6 +59,14 @@ const App = () => {
         profileHomePage="https://www.redditery.com/user/not_called_bob/submitted"
         tag="not_called_bob"
         quantity={paintingsData[1].quantity}
+      /> */}
+
+      <TestDefaultProp test={testDefPropDb} />
+      {/* <TestDefaultProp
+        id={testDefPropDb[1].id}
+        url={testDefPropDb[1].url}
+        title={testDefPropDb[1].title}
+        price={testDefPropDb[1].price}
       /> */}
     </div>
   );
